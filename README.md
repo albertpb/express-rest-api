@@ -15,7 +15,7 @@ npm install
 # Start development
 npm run start:dev
 
-# Start production server:
+# Start production
 npm run start:prod
 ```
 
