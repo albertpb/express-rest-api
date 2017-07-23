@@ -1,3 +1,5 @@
+/* @flow-bin */
+
 import { version } from '../../package.json';
 import { Router } from 'express';
 

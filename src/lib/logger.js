@@ -1,3 +1,5 @@
+/* @flow */
+
 import chalk from 'chalk';
 import log from 'winston';
 import path from 'path';
@@ -15,7 +17,17 @@ function logServerConfig() {
   log.info(chalk.red('=========================================='));
 }
 
-function colorfulLog(tokens, req, res) {
+function colorfulLog(
+  tokens: {
+    status: (Request, Response) => number,
+    url: (Request, Response) => string,
+    'response-time': (Request, Response) => number,
+    res: (Request, Response, string) => string,
+    method: (Request, Response) => string,
+  },
+  req: Request,
+  res: Response,
+) {
   let status = tokens.status(req, res);
   let statusColor =
     status >= 500

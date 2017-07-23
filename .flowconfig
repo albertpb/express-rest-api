@@ -1,0 +1,25 @@
+[ignore]
+.*node_modules/.*
+
+[include]
+.*/src/.*
+
+[libs]
+<PROJECT_ROOT>/flow-typed/package-dep-libdefs.js
+<PROJECT_ROOT>/flow-typed/libdefs.js
+
+[options]
+module.file_ext=.js
+
+module.system=haste
+
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+
+module.name_mapper='\.(svg|png|jpg|gif)$' -> '<PROJECT_ROOT>/flow-typed/url-loader.js'
+
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FixMe
+suppress_type=$FlowExpectedError

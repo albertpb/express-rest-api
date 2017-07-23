@@ -1,3 +1,5 @@
+/* @flow */
+
 import { colorfulLog, logServerConfig } from './lib/logger';
 import { config } from './config';
 import api from './api';

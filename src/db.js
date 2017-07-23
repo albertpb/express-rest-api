@@ -1,3 +1,5 @@
-export default callback => {
+/* @flow */
+
+export default (callback: () => void) => {
   callback();
 };

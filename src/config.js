@@ -1,3 +1,5 @@
+/* @flow */
+
 const config = {
   bodyParser: {
     json: {
