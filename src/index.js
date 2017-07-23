@@ -1,5 +1,6 @@
 /* @flow */
 
+import 'babel-polyfill';
 import { colorfulLog, logServerConfig } from './lib/logger';
 import { config } from './config';
 import api from './api';
