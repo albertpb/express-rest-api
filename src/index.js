@@ -29,7 +29,9 @@ initializeDb(db => {
   // api router
   app.use('/api', api({ config, db }));
 
-  app.listen(process.env.PORT, process.env.HOST, () => logServerConfig());
+  app.listen(process.env.PORT || 3000, process.env.HOST || '0.0.0.0', () =>
+    logServerConfig(),
+  );
 });
 
-export default app;
+module.exports = app;
