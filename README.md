@@ -2,8 +2,7 @@
 
 Minimal Rest API with express
 
-Getting Started
----------------
+## Getting Started
 
 ```sh
 # clone it
@@ -13,13 +12,12 @@ git clone https://github.com/SirAlb3rt/express-rest-api.git
 npm install
 
 # Start development
-npm run start:dev
+npm run start
 
 # Start production
 npm run start:prod
 ```
 
-License
--------
+## License
 
 MIT
